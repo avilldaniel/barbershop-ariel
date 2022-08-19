@@ -6,7 +6,7 @@ const NavBar = () => {
   const [burger, setBurger] = useState(true);
 
   return (
-    <div>
+    <div className=".container">
       {/* Navbar */}
       <nav>
         <Burger opened={!burger} onClick={() => setBurger(!burger)} />
