@@ -18,9 +18,10 @@ const NavBar = () => {
       {!burger && (
         <main>
           <Link href={"/"}>Home</Link>
+          <Link href={"/book"}>Book Now</Link>
           <Link href={"/gallery"}>Gallery</Link>
           <Link href={"/about"}>About</Link>
-          <Link href={"contact"}>Contact</Link>
+          <Link href={"/contact"}>Contact</Link>
         </main>
       )}
     </div>
