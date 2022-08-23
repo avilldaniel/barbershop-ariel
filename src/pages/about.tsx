@@ -12,7 +12,7 @@ const About = () => {
           width={758}
           // layout="intrinsic"
         />
-        <p>
+        <p className="text-orange-600">
           Ariel was born and raised... His journey as a barber began 201x..
           Today, he attends _ while continuing to offer his services outside of
           program hours. When Ariel is not snipping hair and shaping fades, he

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "./Footer";
 import Meta from "./Meta";
 import NavBar from "./NavBar";
@@ -7,31 +8,17 @@ interface ILayout {
 }
 
 const Layout = ({ children }: ILayout) => {
+  const [burger, setBurger] = useState(true);
   return (
     <>
       <Meta />
-      <NavBar />
-      <main>{children}</main>
-      <Footer />
+      <NavBar burger={burger} setBurger={setBurger} />
+      <main className={`${burger ? "block" : "hidden"}`}>{children}</main>
+      <section className={`${burger ? "block" : "hidden"}`}>
+        <Footer />
+      </section>
     </>
   );
 };
 
 export default Layout;
-
-// import Meta from "./Meta";
-
-// export interface ILayoutProps {
-//   children: React.ReactNode;
-// }
-
-// const Layout = ({ children }: ILayoutProps) => {
-//   return (
-//     <>
-//       <Meta />
-//       <main>{children}</main>
-//     </>
-//   );
-// };
-
-// export default Layout;
