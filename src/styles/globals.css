@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* telex-regular - latin */
+@font-face {
+  font-family: "Telex";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../../public/fonts/telex-v14-latin-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+/* athiti-200 - latin */
+@font-face {
+  font-family: "Athiti";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""),
+    url("../../public/fonts/athiti-v12-latin-200.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+/* roboto-condensed-700italic - latin */
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 700;
+  src: local(""),
+    url("../../public/fonts/roboto-condensed-v25-latin-700italic.woff2")
+      format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+}
+
 *,
 *::before,
 *::after {
@@ -12,8 +38,7 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Telex;
 }
 
 a {
@@ -27,6 +52,7 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #1b1a17;
+    /* background: black; */
   }
 }

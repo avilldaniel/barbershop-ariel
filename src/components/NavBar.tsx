@@ -11,18 +11,19 @@ interface INavBar {
 const NavBar = ({ burger, setBurger }: INavBar) => {
   return (
     // Container
-    <div className={`bg-black ${!burger && "h-screen"}  `}>
+    <div className={`${!burger && "h-screen"}  `}>
       {/* Navbar */}
-      <section className="mx-auto p-6 w-full">
-        <nav className="bg-slate-500 flex items-center justify-between h-14">
+      <section className="mx-auto p-6 w-full max-w-6xl">
+        <nav className=" flex items-center justify-between h-14">
           <Burger
             color="white"
             opened={!burger}
             onClick={() => setBurger(!burger)}
+            className="hover:bg-myOrange-dark"
           />
           <p>LOGO</p>
-          <ActionIcon size="lg">
-            <IconBrandInstagram size={32} color="white" />
+          <ActionIcon size="lg" variant="filled">
+            <IconBrandInstagram size={32} />
           </ActionIcon>
         </nav>
 
@@ -30,13 +31,23 @@ const NavBar = ({ burger, setBurger }: INavBar) => {
         {!burger && (
           <main
             onClick={() => setBurger(true)}
-            className="flex flex-col text-5xl pt-8"
+            className="flex flex-col pt-8 text-[3rem] leading-tight text-myOrange font-myHeading w-1/2"
           >
-            <Link href={"/"}>Home</Link>
-            <Link href={"/book"}>Book Now</Link>
-            <Link href={"/gallery"}>Gallery</Link>
-            <Link href={"/about"}>About</Link>
-            <Link href={"/contact"}>Contact</Link>
+            <Link href={"/"}>
+              <a className="hover:text-myOrange-light">Home</a>
+            </Link>
+            <Link href={"/book"}>
+              <a className="hover:text-myOrange-light">Book Now</a>
+            </Link>
+            <Link href={"/gallery"}>
+              <a className="hover:text-myOrange-light">Gallery</a>
+            </Link>
+            <Link href={"/about"}>
+              <a className="hover:text-myOrange-light">About</a>
+            </Link>
+            <Link href={"/contact"}>
+              <a className="hover:text-myOrange-light">Contact</a>
+            </Link>
           </main>
         )}
       </section>

@@ -5,11 +5,11 @@ import Link from "next/link";
 const Home: NextPage = () => {
   return (
     <div className=".container">
-      <h1>Home</h1>
+      <h1>*Home*</h1>
 
       <div className=".content">
-        <section>
-          <Link href="/book">Book Now</Link>
+        <section className="font-myHeading text-2xl">
+          <Link href="/book">BOOK NOW</Link>
         </section>
         <Image
           src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"

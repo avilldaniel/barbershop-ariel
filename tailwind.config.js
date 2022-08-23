@@ -21,6 +21,24 @@ module.exports = {
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    extend: {
+      colors: {
+        myGray: "#1B1A17",
+        myYellow: "#F0A500",
+        myOrange: {
+          DEFAULT: "#E45826",
+          light: "#E9835F",
+          dark: "#B44219",
+        },
+        mySand: "#E6D5B8",
+        mySalmon: "#fccab7",
+      },
+    },
+    fontFamily: {
+      myTitle: ["Roboto Condensed", "sans-serif"],
+      myHeading: ["Athiti", "sans-serif"],
+      myBody: ["Telex", "sans-serif"],
+    },
   },
   plugins: [],
 };
