@@ -1,36 +1,54 @@
 import { IconCopyright } from "@tabler/icons";
-import React from "react";
+import Image from "next/image";
+import sx from "../styles/Footer.module.css";
+import temp_logo2 from "../../public/temp_logo2.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-myGray pt-28">
-      <main className="md:grid md:grid-cols-2 md:space-y-0 gap-y-20 space-y-20 text-center py-12 text-mySand text-lg font-myHeading">
-        <div className="">
-          <header className="text-myOrange font-myHeading font-bold text-4xl">
+    <footer className={sx["footer-container"]}>
+      <main className={sx["footer-content"]}>
+        {/* Contact */}
+        <div className={sx["footer-c"]}>
+          <h1>
             CONTACT <br />
-            {/* Contact <br /> */}
-          </header>
+          </h1>
           Ph: (702)XXX-XXXX <br />
           Email: email@gmail.com
         </div>
 
-        <div className="">
-          <header className="text-myOrange font-myHeading font-bold text-4xl">
+        {/* Hours */}
+        <div className={sx["footer-h"]}>
+          <h1>
             HOURS <br />
-            {/* Hours <br /> */}
-          </header>
+          </h1>
           Mon-Thurs: xAM - yPM <br />
           Fri-Sat: xAM - yPM <br />
           Sun: Closed
         </div>
 
-        <div className="col-span-2">[LOGO]</div>
+        {/* Logo */}
+        <div className={sx["footer-logo"]}>
+          <Image
+            src={temp_logo2}
+            alt="temp logo"
+            layout="fill"
+            objectFit="contain"
+            className={sx["footer-img"]}
+          />
+        </div>
       </main>
 
       {/* Copyright */}
-      <p className="flex gap-x-1 items-center text-mySalmon font-myHeading text-sm">
-        {/* <p className="text-center text-mySalmon font-myHeading text-sm"> */}
-        <IconCopyright size={18} /> 2022 [Company] — Website by avilldaniel
+      <p className={sx["footer-cr"]}>
+        <IconCopyright size={18} /> 2022 [Company] — Website by{" "}
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecorationLine: "underline" }}
+        >
+          @avilldaniel
+        </a>
       </p>
     </footer>
   );

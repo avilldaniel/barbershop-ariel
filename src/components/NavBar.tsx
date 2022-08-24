@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Burger, ActionIcon } from "@mantine/core";
 import { IconBrandInstagram } from "@tabler/icons";
 import { useMyStore } from "../utils/zustand-store";
-import temp_logo from "../../public/temp_logo.svg";
+import temp_logo2 from "../../public/temp_logo2.svg";
 import Image from "next/image";
 
 const NavBar = ({}) => {
@@ -12,25 +12,28 @@ const NavBar = ({}) => {
 
   return (
     // Container
-    // <div className={`${!burger && "h-screen"}  `}>
     <div style={{ height: burger ? "0%" : "100vh" }}>
       {/* Nav */}
-      {/* <section className="mx-auto p-6 w-full max-w-6xl"> */}
       <nav className={sx.nav}>
-        {/* <nav className=" flex items-center justify-between h-14"> */}
         <section className={sx["nav-bar"]}>
           <Burger
             color="white"
             opened={!burger}
             onClick={() => setBurger(!burger)}
-            // className="hover:bg-myOrange-dark"
             className={sx["navbar-item"]}
           />
 
           {/* Logo */}
           <Link href="/">
-            <a onClick={() => setBurger(true)}>
-              <Image src={temp_logo} alt="temp logo" height={100} width={100} />
+            <a onClick={() => setBurger(true)} className={sx["nav-logo"]}>
+              <Image
+                src={temp_logo2}
+                alt="temp logo"
+                // height={100}
+                // width={100}
+                layout="fill"
+                objectFit="contain"
+              />
             </a>
           </Link>
 
@@ -41,26 +44,21 @@ const NavBar = ({}) => {
 
         {/* Opened navigation */}
         {!burger && (
-          <main
-            // onClick={() => setBurger(true)}
-            onClick={() => setBurger(true)}
-            // className="flex flex-col pt-8 text-[3rem] leading-tight text-myOrange font-myHeading w-1/2"
-            className={sx["nav-menu"]}
-          >
+          <main onClick={() => setBurger(true)} className={sx["nav-menu"]}>
             <Link href={"/"}>
-              <a className="hover:text-myOrange-light">Home</a>
+              <a className={sx["navmenu-link"]}>Home</a>
             </Link>
             <Link href={"/book"}>
-              <a className="hover:text-myOrange-light">Book Now</a>
+              <a className={sx["navmenu-link"]}>Book Now</a>
             </Link>
             <Link href={"/gallery"}>
-              <a className="hover:text-myOrange-light">Gallery</a>
+              <a className={sx["navmenu-link"]}>Gallery</a>
             </Link>
             <Link href={"/about"}>
-              <a className="hover:text-myOrange-light">About</a>
+              <a className={sx["navmenu-link"]}>About</a>
             </Link>
             <Link href={"/contact"}>
-              <a className="hover:text-myOrange-light">Contact</a>
+              <a className={sx["navmenu-link"]}>Contact</a>
             </Link>
           </main>
         )}

@@ -1,13 +1,20 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import sx from "../styles/Home.module.css";
+import { useMyStore } from "../utils/zustand-store";
 
 const Home: NextPage = () => {
-  return (
-    <div className=".container">
-      <h1>*Home*</h1>
+  const burger = useMyStore((state) => state.burger);
 
-      <div className=".content">
+  return (
+    <div className={sx["home-container"]}>
+      {/* <h1>*Company name*</h1> */}
+      {burger && (
+        <header className={sx["home-title"]}>COMPANY {`<name>`}</header>
+      )}
+
+      <div className={sx["home-content"]}>
         <section className="font-myHeading text-2xl">
           <Link href="/book">BOOK NOW</Link>
         </section>
@@ -34,6 +41,7 @@ const Home: NextPage = () => {
           height={1009}
           width={672}
         />
+        <section>About me</section>
       </div>
     </div>
   );

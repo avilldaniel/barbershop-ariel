@@ -3,13 +3,20 @@
 @tailwind utilities; */
 
 :root {
-  --my-dark-gray: #1b1a17;
+  --my-black: #000300;
+  --my-gray-norm: #231f20;
+  /* --my-gray-dark: #1b1a17; */
+  --my-gray-dark: #141311;
   --my-yellow: #f0a500;
-  --my-orange-norm: #e45826;
+  /* --my-orange-norm: #e45826; */
+  --my-orange-norm: #f4793e;
   --my-orange-light: #e9835f;
-  --my-orange-dark: #b44219;
-  --my-sand: #e6d5b8;
-  --my-salmon: #fccab7;
+  /* --my-orange-dark: #b44219; */
+  --my-orange-dark: #e45826;
+  /* --my-sand: #e6d5b8; */
+  /* --my-sand: #e8d8c4; */
+  --my-sand: #f5deb3;
+  --my-brown: #c49d6e;
 }
 
 /* telex-regular - latin | body */
@@ -18,24 +25,28 @@
   font-style: normal;
   font-weight: 400;
   src: local(""),
-    url("../../public/fonts/telex-v14-latin-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../../public/fonts/telex-v14-latin-regular.woff2") format("woff2");
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* athiti-200 - latin | heading */
 @font-face {
   font-family: "Athiti";
   font-style: normal;
   font-weight: 200;
   src: local(""),
-    url("../../public/fonts/athiti-v12-latin-200.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../../public/fonts/athiti-v12-latin-200.woff2") format("woff2");
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
+
 /* roboto-condensed-700italic - latin | title */
 @font-face {
   font-family: "Roboto Condensed";
   font-style: italic;
   font-weight: 700;
   src: local(""),
-    url("../../public/fonts/roboto-condensed-v25-latin-700italic.woff2")
-      format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../../public/fonts/roboto-condensed-v25-latin-700italic.woff2") format("woff2");
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 *,
@@ -53,8 +64,8 @@ body {
 
 body {
   /* border: 1px dashed chartreuse; */
-  padding: 6px;
-  max-width: 118em;
+  /* padding: 30px 6px 10px; */
+  /* max-width: 118em; */
   margin: auto;
 }
 
@@ -67,9 +78,10 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
-    background: #1b1a17;
+    background: var(--my-gray-norm);
     /* background: black; */
   }
 }

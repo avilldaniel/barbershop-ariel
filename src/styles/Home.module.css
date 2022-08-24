@@ -1,0 +1,58 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  /* border: 1px solid magenta; */
+  text-align: center;
+  font-family: "Roboto Condensed";
+  /* font-family: "Telex"; */
+  font-size: 2.5rem;
+  color: var(--my-sand);
+
+  /* text-shadow: 5px 5px 0px #eb452b,
+    10px 10px 0px #efa032,
+    15px 15px 0px #46b59b,
+    20px 20px 0px #017e7f,
+    25px 25px 0px #052939,
+    30px 30px 0px #c11a2b,
+    35px 35px 0px #c11a2b,
+    40px 40px 0px #c11a2b,
+    45px 45px 0px #c11a2b; */
+  /* text-shadow:
+    1px 1px 0px var(--my-orange-dark),
+    2px 2px 0px var(--my-orange-light),
+    3px 3px 0px rgba(140, 2, 2, 0.825),
+    4px 4px 0px var(--my-brown); */
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--my-sand);
+  text-shadow:
+    4px 4px var(--my-orange-dark),
+    8px 8px var(--my-black);
+}
+
+.home-content {
+  /* margin: auto; */
+}
+
+@media (min-width: 768px) {
+  .home-title {
+    font-size: 6em;
+    position: absolute;
+    top: 1.8em;
+    left: 2em;
+    z-index: 50;
+    letter-spacing: 0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--my-sand);
+    text-shadow:
+      8px 8px var(--my-orange-dark),
+      18px 18px var(--my-black);
+  }
+}

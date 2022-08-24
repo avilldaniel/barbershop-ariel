@@ -1,28 +1,66 @@
 .nav {
-  /* background-color: var(--my-sand); */
-  padding: 4px;
-  /* width: 100%; */
-  /* margin: auto; */
-  /* max-width: 72rem; */
+  background-color: var(--my-gray-dark);
+  padding: 1em 0.5em;
+  height: 100%;
+  width: 100%;
+
+  position: sticky;
+  top: 0;
 }
 
 .nav-bar {
+  /* border: 1px solid yellow; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3.5rem;
+  max-width: 110em;
+  padding-left: .5em;
+  padding-right: .5em;
+  margin: auto;
+}
+
+.nav-logo {
+  /* border: 1px solid yellow; */
+  position: relative;
+  width: 20%;
+  height: 4em;
 }
 
 .nav-menu {
+  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
+  margin: auto;
+  max-width: 30em;
   font-size: 3rem;
   line-height: 1.5;
   color: var(--my-orange-norm);
-  font-family: "Telex";
+  text-shadow: 5px 5px var(--my-black);
 }
 
 .navbar-item:hover {
-  background-color: var(--my-orange-dark);
+  /* background-color: var(--my-orange-dark); */
+  background-color: var(--my-orange-norm);
+}
+
+.navmenu-link:hover {
+  color: var(--my-orange-light);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .nav-bar {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .nav-logo {
+    /* width: 20%; */
+    height: 5em;
+  }
 }
