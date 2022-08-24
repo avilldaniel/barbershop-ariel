@@ -1,8 +1,18 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
-/* telex-regular - latin */
+:root {
+  --my-dark-gray: #1b1a17;
+  --my-yellow: #f0a500;
+  --my-orange-norm: #e45826;
+  --my-orange-light: #e9835f;
+  --my-orange-dark: #b44219;
+  --my-sand: #e6d5b8;
+  --my-salmon: #fccab7;
+}
+
+/* telex-regular - latin | body */
 @font-face {
   font-family: "Telex";
   font-style: normal;
@@ -10,7 +20,7 @@
   src: local(""),
     url("../../public/fonts/telex-v14-latin-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
-/* athiti-200 - latin */
+/* athiti-200 - latin | heading */
 @font-face {
   font-family: "Athiti";
   font-style: normal;
@@ -18,7 +28,7 @@
   src: local(""),
     url("../../public/fonts/athiti-v12-latin-200.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
-/* roboto-condensed-700italic - latin */
+/* roboto-condensed-700italic - latin | title */
 @font-face {
   font-family: "Roboto Condensed";
   font-style: italic;
@@ -39,6 +49,13 @@
 html,
 body {
   font-family: Telex;
+}
+
+body {
+  /* border: 1px dashed chartreuse; */
+  padding: 6px;
+  max-width: 118em;
+  margin: auto;
 }
 
 a {

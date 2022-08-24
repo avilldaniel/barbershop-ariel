@@ -1,0 +1,28 @@
+.nav {
+  /* background-color: var(--my-sand); */
+  padding: 4px;
+  /* width: 100%; */
+  /* margin: auto; */
+  /* max-width: 72rem; */
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: var(--my-orange-norm);
+  font-family: "Telex";
+}
+
+.navbar-item:hover {
+  background-color: var(--my-orange-dark);
+}
