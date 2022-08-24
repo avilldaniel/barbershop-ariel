@@ -9,39 +9,44 @@ const Home: NextPage = () => {
 
   return (
     <div className={sx["home-container"]}>
-      {/* <h1>*Company name*</h1> */}
       {burger && (
         <header className={sx["home-title"]}>COMPANY {`<name>`}</header>
       )}
 
       <div className={sx["home-content"]}>
-        <section className="font-myHeading text-2xl">
+        {/* Image one */}
+        <div className={sx["img-wrapper"]}>
+          <Image
+            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
+            alt="Home page image 1"
+            height={1009}
+            width={672}
+          />
+        </div>
+        <p className={sx["home-book"]}>
           <Link href="/book">BOOK NOW</Link>
-        </section>
-        <Image
-          src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
-          alt="Home page image 1"
-          height={1009}
-          width={672}
-        />
-        <section>
-          <h4>Services</h4>
+        </p>
+
+        {/* Image two */}
+        <div className={sx["img-wrapper"]}>
+          <Image
+            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home2.jpg"
+            alt="Home page image 1"
+            height={1009}
+            width={672}
+          />
+        </div>
+        <p className={sx["home-serv"]}>
+          <header>SERVICES</header>
           <ul>
             <li>Gentleman{`'`}s Cut</li>
             <li>Child{`'`}s Cut</li>
             <li>Back n{`'`} Sides</li>
             <li>Hair n{`'`} Beard</li>
           </ul>
-        </section>
+        </p>
 
-        {/* Keep? */}
-        <Image
-          src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home2.jpg"
-          alt="Home page image 1"
-          height={1009}
-          width={672}
-        />
-        <section>About me</section>
+        {/* <section>About me</section> */}
       </div>
     </div>
   );

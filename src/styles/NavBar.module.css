@@ -1,11 +1,11 @@
 .nav {
-  background-color: var(--my-gray-dark);
-  padding: 1em 0.5em;
+  background-color: var(--clr-gray-dark);
+  padding: .25em 0.5em;
   height: 100%;
   width: 100%;
 
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
 }
 
 .nav-bar {
@@ -35,23 +35,23 @@
   max-width: 30em;
   font-size: 3rem;
   line-height: 1.5;
-  color: var(--my-orange-norm);
-  text-shadow: 5px 5px var(--my-black);
+  color: var(--clr-orange-norm);
+  text-shadow: 5px 5px var(--clr-black);
 }
 
 .navbar-item:hover {
-  /* background-color: var(--my-orange-dark); */
-  background-color: var(--my-orange-norm);
+  /* background-color: var(--clr-orange-dark); */
+  background-color: var(--clr-orange-norm);
 }
 
 .navmenu-link:hover {
-  color: var(--my-orange-light);
+  color: var(--clr-orange-light);
 }
 
 @media (min-width: 768px) {
   .nav {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    /* padding-top: 2em;
+    padding-bottom: 2em; */
   }
 
   .nav-bar {

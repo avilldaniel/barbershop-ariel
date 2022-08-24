@@ -3,20 +3,26 @@
 @tailwind utilities; */
 
 :root {
-  --my-black: #000300;
-  --my-gray-norm: #231f20;
-  /* --my-gray-dark: #1b1a17; */
-  --my-gray-dark: #141311;
-  --my-yellow: #f0a500;
-  /* --my-orange-norm: #e45826; */
-  --my-orange-norm: #f4793e;
-  --my-orange-light: #e9835f;
-  /* --my-orange-dark: #b44219; */
-  --my-orange-dark: #e45826;
-  /* --my-sand: #e6d5b8; */
-  /* --my-sand: #e8d8c4; */
-  --my-sand: #f5deb3;
-  --my-brown: #c49d6e;
+  --clr-black: #000300;
+  --clr-white: #fffaf0;
+  --clr-gray-norm: #231f20;
+  --clr-gray-dark: #141311;
+  --clr-yellow: #f0a500;
+  --clr-orange-norm: #f4793e;
+  --clr-orange-light: #e9835f;
+  --clr-orange-dark: #e45826;
+  --clr-sand: #f5deb3;
+  --clr-brown: #c49d6e;
+
+  --ff-body: "Telex";
+  --ff-heading: "Athiti";
+  --ff-title: "Roboto Condensed";
+
+  --fs-xl: 2.5rem;
+  --fs-lg: 2rem;
+  --fs-600: 1.125rem;
+  --fs-400: .875rem;
+  --fs-200: .625rem;
 }
 
 /* telex-regular - latin | body */
@@ -59,7 +65,7 @@
 
 html,
 body {
-  font-family: Telex;
+  font-family: var(--ff-body);
 }
 
 body {
@@ -74,6 +80,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -81,7 +91,13 @@ a {
 
   body {
     color: white;
-    background: var(--my-gray-norm);
+    background: var(--clr-gray-norm);
     /* background: black; */
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-xl: clamp(3rem, 6vw + 1rem, 7rem);
   }
 }

@@ -1,5 +1,5 @@
 .footer-container {
-  /* background-color: var(--my-dark-gray); */
+  /* background-color: var(--clr-dark-gray); */
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
@@ -13,15 +13,14 @@
   flex-direction: column;
   row-gap: 3rem;
   text-align: center;
-  /* color: var(--my-sand); */
-  color: var(--my-brown);
-  font-size: large;
-  font-family: "Athiti";
+  color: var(--clr-brown);
+  font-size: var(--fs-600);
+  font-family: var(--ff-heading);
 }
 
 .footer-content h1 {
-  color: var(--my-orange-norm);
-  font-family: "Telex";
+  color: var(--clr-orange-norm);
+  font-family: var(--ff-body);
 }
 
 .footer-logo {
@@ -38,7 +37,7 @@
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: x-small;
+  font-size: var(--fs-200);
 }
 
 @media (min-width: 768px) {
@@ -72,7 +71,7 @@
   }
 
   .footer-cr {
-    font-size: small;
+    font-size: var(--fs-400);
     text-align: center;
   }
 }
