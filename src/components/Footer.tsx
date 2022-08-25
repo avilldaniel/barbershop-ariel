@@ -6,7 +6,7 @@ import temp_logo2 from "../../public/temp_logo2.svg";
 const Footer = () => {
   return (
     <footer className={sx["footer-container"]}>
-      <main className={sx["footer-content"]}>
+      <main className={`flex-col-center ${sx["footer-content"]}`}>
         {/* Contact */}
         <div className={sx["footer-c"]}>
           <h1>
@@ -39,7 +39,8 @@ const Footer = () => {
       </main>
 
       {/* Copyright */}
-      <p className={sx["footer-cr"]}>
+      {/* <p className={sx["footer-cr"]}> */}
+      <p className={`flex-row-center ${sx["footer-cr"]}`}>
         <IconCopyright size={18} /> 2022 [Company] — Website by{" "}
         <a
           href=""

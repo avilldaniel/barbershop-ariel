@@ -2,7 +2,7 @@ import { useReducer, useState } from "react";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Textarea, TextInput } from "@mantine/core";
+// import { Textarea, TextInput } from "@mantine/core";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
 

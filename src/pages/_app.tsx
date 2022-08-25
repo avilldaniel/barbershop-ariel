@@ -1,4 +1,3 @@
-import { MantineProvider } from "@mantine/core";
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
 import Layout from "../components/Layout";
@@ -13,11 +12,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, [burger]);
 
   return (
-    <MantineProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </MantineProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

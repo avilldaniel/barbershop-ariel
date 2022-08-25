@@ -35,11 +35,6 @@
   flex-direction: column;
 }
 
-/* .img-one { */
-/* border: 1px solid yellow; */
-/* margin-bottom: -2.5em; */
-/* } */
-
 .img-wrapper {
   /* border: 1px solid yellow; */
   filter: brightness(65%);
@@ -103,4 +98,19 @@
   .home-serv {
     /* max-width: 7em; */
   }
+}
+
+.combine-layer {
+  display: grid;
+}
+
+.layer-one, .layer-two {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layer-two {
+  border: 1px dashed red;
+  z-index: 10;
+  margin: auto;
 }
