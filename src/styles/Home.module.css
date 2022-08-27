@@ -7,7 +7,7 @@
 }
 
 .home-title {
-  border: 1px solid magenta;
+  /* border: 2px solid whitesmoke; */
   /* position: relative; */
   position: absolute;
   /* top: 5.5em; */
@@ -30,7 +30,7 @@
 .home-content {
   /* border: 1px solid magenta; */
   font-family: var(--ff-heading);
-  font-size: var(--fs-lg);
+  /* font-size: var(--fs-lg); */
   display: flex;
   flex-direction: column;
 }
@@ -39,6 +39,9 @@
   /* border: 1px solid yellow; */
   filter: brightness(65%);
   /* padding: .3em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-book {
@@ -48,8 +51,7 @@
   text-align: center;
   color: var(--clr-white);
   width: 6em;
-  margin: auto;
-  margin-bottom: .5em;
+  margin: .5em auto;
   border-radius: 10px;
   border: 2px solid var(--clr-white);
 }
@@ -62,26 +64,71 @@
   color: var(--clr-black);
   font-family: var(--ff-title);
   font-size: var(--fs-xl);
+  font-size: clamp(var(--fs-xl), 13vw, 6rem);
   padding: .25em;
   width: 6.5em;
-  /* align-self: center; */
   position: relative;
   top: -1.5em;
-  /* margin-bottom: -5.7em; */
+  margin-bottom: -2.3em;
   z-index: 2;
 }
 
 .home-serv li {
   font-size: var(--fs-600);
+  font-size: clamp(var(--fs-600), 13vw, 2rem);
 }
 
-@media (max-width: 45rem) {
+.home-tbd {
+  border: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-orange-norm);
+  font-family: var(--ff-heading);
+  padding: 2.5em 0 1.5em;
+  width: 100vw;
+  gap: .8em;
+}
+
+.home-tbd p {
+  width: minmax(8em);
+  width: 8em;
+  margin: auto;
+}
+
+.home-tbd h1 {
+  /* font-family: var(--ff-title); */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: var(--fs-xl);
+}
+
+.home-bio {
+  color: var(--clr-white);
+  /* border-radius: 10px; */
+  border: 2px solid var(--clr-white);
+  font-size: var(--fs-600);
+  text-align: center;
+}
+
+/* @media (max-width: 45rem) { */
+@media (max-width: 767px) {
   .home-title {
     font-size: clamp(2rem, 13vw, 6rem);
-    top: clamp(7em, 13vw, 2em);
+    top: 4em;
+  }
+
+  .home-content {
+    font-size: clamp(var(--fs-lg), 10vw, 3rem);
+  }
+
+  .home-tbd {
+    /* font-size: var(--fs-lg); */
+    font-size: clamp(var(--fs-lg), 5vh, 3rem);
   }
 }
 
+/* @media (min-width: 45rem) { */
 @media (min-width: 768px) {
   .home-title {
     position: absolute;
@@ -100,10 +147,6 @@
 
   .home-content {
     font-size: 3rem;
-  }
-
-  .home-serv {
-    /* max-width: 7em; */
   }
 }
 

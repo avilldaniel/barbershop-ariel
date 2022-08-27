@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import sx from "../styles/Home.module.css";
+import ariel from "../../public/IMG_2006.jpeg";
 
 const Home: NextPage = () => {
   return (
@@ -57,7 +58,14 @@ const Home: NextPage = () => {
           </ul>
         </div>
 
-        {/* <section>About me</section> */}
+        <section className={sx["home-tbd"]}>
+          {/* <Image src={ariel} alt="ariel aha" width={999} height={1332} /> */}
+          <Image src={ariel} alt="ariel aha" width={150} height={200} />
+          <h1>Ariel Yabut</h1>
+          <p className={sx["home-bio"]}>
+            <Link href="/about">View Bio</Link>
+          </p>
+        </section>
       </div>
     </div>
   );
