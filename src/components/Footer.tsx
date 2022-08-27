@@ -43,7 +43,7 @@ const Footer = () => {
       <p className={`flex-row-center ${sx["footer-cr"]}`}>
         <IconCopyright size={18} /> 2022 [Company] — Website by{" "}
         <a
-          href=""
+          href="https://www.linkedin.com/in/daniel-villegas-aira/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecorationLine: "underline" }}
