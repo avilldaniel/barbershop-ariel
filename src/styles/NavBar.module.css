@@ -28,6 +28,7 @@
 
 .insta {
   border: 0;
+  background: transparent;
 }
 
 .mobile-nav-toggle {
@@ -46,7 +47,7 @@
     /* Position nav links within container */
     /* background-color: temp bg-color for testing); */
     flex-direction: column;
-    font-size: var(--fs-lg);
+    font-size: clamp(var(--fs-lg), 10vh, 2.7rem);
     padding: min(28vh, 4em) 7%;
 
     /* Background */
@@ -72,13 +73,15 @@
     z-index: 9999;
     width: 2rem;
     aspect-ratio: 1;
-    inset: 5% 0 0 7%;
+    /* inset: 5% 0 0 7%; */
+    left: 5%;
     border: 0;
 
     /* Set background color (optional) */
     background: transparent;
   }
 
+  /* Manually create hamburger */
   .hamburger {
     display: block;
     position: relative;
@@ -92,7 +95,7 @@
     height: 3px;
     background-color: var(--clr-white);
 
-    transition: transform 250ms ease-in-out;
+    transition: transform 350ms ease-in-out, opacity 100ms linear;
   }
 
   .hamburger::before,
@@ -108,5 +111,18 @@
 
   .hamburger::after {
     top: 6px;
+  }
+
+  /* Animate hamburger when nav is opened */
+  .nav-open .hamburger {
+    transform: rotate(45deg);
+  }
+
+  .nav-open .hamburger::before {
+    opacity: 0;
+  }
+
+  .nav-open .hamburger::after {
+    transform: rotate(90deg) translate(-6px);
   }
 }
