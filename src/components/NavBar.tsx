@@ -19,7 +19,6 @@ const NavBar = ({}) => {
       <button
         aria-controls={sx["primary-nav"]}
         aria-expanded={burger ? "false" : "true"}
-        // className={sx["mobile-nav-toggle"]}
         className={`${sx["mobile-nav-toggle"]} ${!burger && sx["nav-open"]}`}
         onClick={toggleBurger}
       >
