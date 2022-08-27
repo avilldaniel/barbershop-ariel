@@ -3,6 +3,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 9000;
+
+  background: hsl(0 0% 10% / 0.9);
+  border-bottom: 1px solid gray;
 }
 
 .primary-nav {
