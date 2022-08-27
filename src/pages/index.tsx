@@ -22,8 +22,8 @@ const Home: NextPage = () => {
           <Link href="/book">BOOK NOW</Link>
         </p>
 
-        {/* THIS ONE */}
-        <section className={sx["combine-layer"]}>
+        {/* Image one */}
+        {/* <section className={sx["combine-layer"]}>
           <div className={sx["layer-one"]}>
             <Image
               src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
           <p className={sx["layer-two"]}>
             <Link href="/book">BOOK NOW</Link>
           </p>
-        </section>
+        </section> */}
 
         {/* Image two */}
         <div className={sx["img-wrapper"]}>
@@ -53,6 +53,7 @@ const Home: NextPage = () => {
             <li>Child{`'`}s Cut</li>
             <li>Back n{`'`} Sides</li>
             <li>Hair n{`'`} Beard</li>
+            <li>Hair dye</li>
           </ul>
         </div>
 

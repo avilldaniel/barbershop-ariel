@@ -7,11 +7,11 @@
 }
 
 .home-title {
-  /* border: 1px solid magenta; */
+  border: 1px solid magenta;
   /* position: relative; */
   position: absolute;
-  top: 6.5em;
-  margin-top: -.75em;
+  /* top: 5.5em; */
+  /* margin-top: -.75em; */
   z-index: 2;
   text-align: center;
   font-family: var(--ff-title);
@@ -73,6 +73,13 @@
 
 .home-serv li {
   font-size: var(--fs-600);
+}
+
+@media (max-width: 45rem) {
+  .home-title {
+    font-size: clamp(2rem, 13vw, 6rem);
+    top: clamp(7em, 13vw, 2em);
+  }
 }
 
 @media (min-width: 768px) {

@@ -24,6 +24,7 @@
   align-items: center;
   margin: 1rem;
   z-index: 2000;
+  gap: 0 1em;
 }
 
 .insta {
