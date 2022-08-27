@@ -67,14 +67,13 @@ const NavBar = ({}) => {
       {/* Icons */}
       <section className={sx["primary-icons"]}>
         {/* Insta */}
-        <button
-          className={sx["insta"]}
-          onClick={() => {
-            console.log("Open insta in new tab");
-          }}
+        <a
+          href="https://www.instagram.com/ariel_onguard"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <IconBrandInstagram size={32} color="white" />
-        </button>
+        </a>
         {/* Logo */}
         <Link href="/">
           <a className={""} onClick={() => setBurger(true)}>
