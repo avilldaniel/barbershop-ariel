@@ -59,9 +59,9 @@ const Contact = () => {
 
   // Zod schema
   const schema = z.object({
-    from_name: z.string().min(1).max(25),
+    from_name: z.string().min(1, "Required").max(25, "Too many characters"),
     email_id: z.string().email(),
-    message: z.string().min(1).max(280),
+    message: z.string().min(1, "Required").max(280, "Too many characters"),
   });
 
   // useForm()
@@ -90,14 +90,14 @@ const Contact = () => {
   };
 
   return (
-    <div className=".container">
-      <h1>Contact Me</h1>
-
-      <div className=".content">
+    <div className={sx.container}>
+      <div className={sx.content}>
+        <h1>Contact Me</h1>
         {/* Contact form */}
         {!msgSent ? (
+          // <div className={sx.form}>
           <div>
-            <form onSubmit={handleSubmit(contactSubmit)}>
+            <form onSubmit={handleSubmit(contactSubmit)} className={sx.form}>
               {/* Name */}
               <div className={sx["form-name"]}>
                 <input
@@ -115,14 +115,17 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {errors.from_name?.message && (
-                  <p>{errors.from_name.message as unknown as string}</p>
+                  <p className={sx["input-err"]}>
+                    {errors.from_name.message as unknown as string}
+                  </p>
                 )}
               </div>
 
               {/* Email */}
               <div className={sx["form-email"]}>
                 <input
-                  type="email"
+                  // type="email"
+                  type="text"
                   {...register("email_id")}
                   className={`
                     ${sx["input-field"]}
@@ -136,7 +139,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {errors.email_id?.message && (
-                  <p>{errors.email_id.message as unknown as string}</p>
+                  <p className={sx["input-err"]}>
+                    {errors.email_id.message as unknown as string}
+                  </p>
                 )}
               </div>
 
@@ -156,7 +161,9 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 {errors.message?.message && (
-                  <p>{errors.message.message as unknown as string}</p>
+                  <p className={sx["input-err"]}>
+                    {errors.message.message as unknown as string}
+                  </p>
                 )}
               </div>
 

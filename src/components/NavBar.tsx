@@ -9,9 +9,9 @@ const NavBar = ({}) => {
   const burger = useMyStore((state) => state.burger);
   const setBurger = useMyStore((state) => state.setBurger);
 
-  const toggleBurger = () => {
-    setBurger(!burger);
-  };
+  // const toggleBurger = () => {
+  //   setBurger(!burger);
+  // };
 
   return (
     // Container
@@ -20,7 +20,7 @@ const NavBar = ({}) => {
         aria-controls={sx["primary-nav"]}
         aria-expanded={burger ? "false" : "true"}
         className={`${sx["mobile-nav-toggle"]} ${!burger && sx["nav-open"]}`}
-        onClick={toggleBurger}
+        onClick={() => setBurger(!burger)}
       >
         {/* Hamburger */}
         <span className={sx.hamburger}></span>
@@ -38,27 +38,27 @@ const NavBar = ({}) => {
         >
           <li>
             <Link href={"/"}>
-              <a onClick={toggleBurger}>Home</a>
+              <a onClick={() => setBurger(true)}>Home</a>
             </Link>
           </li>
           <li>
             <Link href={"/book"}>
-              <a onClick={toggleBurger}>Book Now</a>
+              <a onClick={() => setBurger(true)}>Book Now</a>
             </Link>
           </li>
           <li>
             <Link href={"/gallery"}>
-              <a onClick={toggleBurger}>Gallery</a>
+              <a onClick={() => setBurger(true)}>Gallery</a>
             </Link>
           </li>
           <li>
             <Link href={"/about"}>
-              <a onClick={toggleBurger}>About</a>
+              <a onClick={() => setBurger(true)}>About</a>
             </Link>
           </li>
           <li>
             <Link href={"/contact"}>
-              <a onClick={toggleBurger}>Contact</a>
+              <a onClick={() => setBurger(true)}>Contact</a>
             </Link>
           </li>
         </ul>

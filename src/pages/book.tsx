@@ -1,7 +1,6 @@
-import React from "react";
 import sx from "../styles/Book.module.css";
 
-const book = () => {
+const Book = () => {
   return (
     <div className={sx.container}>
       <div className={sx.content}>
@@ -16,10 +15,6 @@ const book = () => {
           </p>
         </div>
 
-        {/* <section className={sx.pricing}>
-          <p>Pricing:</p>
-          <h2>$25</h2>
-        </section> */}
         <div className={sx["book-serv"]}>
           <header>SERVICES</header>
           <ul>
@@ -35,4 +30,4 @@ const book = () => {
   );
 };
 
-export default book;
+export default Book;

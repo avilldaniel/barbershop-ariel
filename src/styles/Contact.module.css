@@ -1,5 +1,35 @@
+.container {
+  max-width: 155em;
+  margin: auto;
+}
+
+.content {
+  /* border: 1px solid cyan; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4.3em;
+  border-bottom: 1px solid gray;
+}
+
+.form {
+  /* border: 1px solid cyan; */
+  width: max(17em, 30vw);
+  padding: 20px 0;
+
+  /* for button position */
+  position: relative;
+}
+
+.form input,
+.form textarea {
+  padding: .5em 0;
+  width: 100%;
+}
+
 .input-field {
-  padding: 3px;
+  margin-bottom: 2em;
   outline: 0;
   border-width: 0 0 3px;
   /* border-color: var(--clr-white); */
@@ -12,7 +42,12 @@
 }
 
 .error-control {
-  border-color: red;
+  border-color: crimson;
+}
+
+.input-err {
+  font-size: small;
+  color: red;
 }
 
 .form-name {}
@@ -20,3 +55,17 @@
 .form-email {}
 
 .form-msg {}
+
+.form>button {
+  position: absolute;
+  right: 0;
+  background-color: var(--clr-orange-dark);
+
+  width: 4.5em;
+  padding: .5em .25em;
+  margin-top: .5em;
+
+  border: 0;
+  border-radius: 5px;
+  font-family: var(--ff-body);
+}
