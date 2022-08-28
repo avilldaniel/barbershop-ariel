@@ -1,10 +1,9 @@
 .container {
-  border: 1px solid blueviolet;
-  max-width: 100vw;
+  /* border: 1px solid blueviolet; */
+  max-width: 155em;
   background-color: var(--clr-sand);
-
-  max-width: 42em;
-  padding: 5% 6%;
+  padding: 1em 6%;
+  height: 100vh;
 
   color: var(--clr-black);
   font-family: var(--ff-heading);
@@ -14,32 +13,31 @@
 .container h1 {
   font-family: var(--ff-title);
   font-size: var(--fs-xl);
-  padding: .5em 0;
+  font-size: clamp(var(--fs-xl), 13vw, 6rem);
+  /* padding: .25em 0; */
 }
 
-.pricing {
-  /* border: 1px solid blue; */
-  /* text-align: center; */
+.content {
+  /* border: 1px solid blueviolet; */
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
-  align-items: center;
-  font-size: var(--fs-xl);
+
+  height: 100%;
 }
+
+.book-now {}
 
 .book-serv {
   /* border: 1px dashed olivedrab; */
   text-align: end;
   background-color: var(--clr-orange-norm);
-  filter: brightness(90%);
+  box-shadow: 3px 3px 3px var(--clr-gray-norm);
   color: var(--clr-white);
   font-family: var(--ff-title);
-  font-size: var(--fs-xl);
   font-size: clamp(var(--fs-xl), 13vw, 6rem);
-  padding: .25em;
-  width: 6.5em;
-  position: relative;
-  top: 1em;
-  margin-bottom: .2em;
+  padding: 0.1em .2em;
+  max-width: 50em;
   z-index: 2;
 }
 

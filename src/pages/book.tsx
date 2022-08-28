@@ -5,14 +5,16 @@ const book = () => {
   return (
     <div className={sx.container}>
       <div className={sx.content}>
-        <h1>Book Now</h1>
-        <p>
-          To book a haircut, you can reach me using the contact information
-          found below.
-          <br />- If possible, please reach out at least a day before the
-          desired appointment date?
-          <br />- You can expect a response within that day on availability?
-        </p>
+        <div className={sx["book-now"]}>
+          <h1>Book Now</h1>
+          <p>
+            To book a haircut, you can reach me using the contact information
+            found below.
+            <br />- If possible, please reach out at least a day before the
+            desired appointment date?
+            <br />- You can expect a response within that day on availability?
+          </p>
+        </div>
 
         {/* <section className={sx.pricing}>
           <p>Pricing:</p>

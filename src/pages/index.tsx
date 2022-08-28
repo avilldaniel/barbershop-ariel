@@ -7,9 +7,10 @@ import ariel from "../../public/IMG_2006.jpeg";
 const Home: NextPage = () => {
   return (
     <div className={sx["home-container"]}>
-      <header className={sx["home-title"]}>COMPANY {`<name>`}</header>
+      {/* <header className={sx["home-title"]}>COMPANY {`<name>`}</header> */}
 
       <div className={sx["home-content"]}>
+        <header className={sx["home-title"]}>COMPANY {`<name>`}</header>
         {/* Image one */}
         <div className={sx["img-wrapper"]}>
           <Image
@@ -57,20 +58,28 @@ const Home: NextPage = () => {
             <li>Hair dye - $</li>
           </ul>
         </div>
-
-        <section className={sx["home-bio"]}>
-          <div className={sx["home-bio-content"]}>
-            {/* <Image src={ariel} alt="ariel aha" width={999} height={1332} /> */}
-            <Image src={ariel} alt="ariel aha" width={150} height={200} />
-            <div>
-              <h1>Ariel Yabut</h1>
-              <p>
-                <Link href="/about">View Bio</Link>
-              </p>
-            </div>
-          </div>
-        </section>
       </div>
+
+      <section className={sx["home-bio"]}>
+        <div className={sx["home-bio-content"]}>
+          {/* <Image src={ariel} alt="ariel aha" width={999} height={1332} /> */}
+          <Image
+            src={ariel}
+            alt="ariel aha"
+            // width={999}
+            // height={1332}
+            width={168}
+            height={224}
+            style={{ borderRadius: "15px 50px 15px 50px" }}
+          />
+          <div>
+            <h1>Ariel Yabut</h1>
+            <p>
+              <Link href="/about">View Bio</Link>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

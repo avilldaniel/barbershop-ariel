@@ -2,9 +2,9 @@ import { useReducer, useState } from "react";
 import { useForm, SubmitHandler, FieldValues } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-// import { Textarea, TextInput } from "@mantine/core";
 import emailjs from "@emailjs/browser";
 import Link from "next/link";
+import sx from "../styles/Contact.module.css";
 
 const Contact = () => {
   // Render message confirmation
@@ -99,36 +99,66 @@ const Contact = () => {
           <div>
             <form onSubmit={handleSubmit(contactSubmit)}>
               {/* Name */}
-              <TextInput
-                {...register("from_name")}
-                placeholder="Name *"
-                error={errors.from_name?.message ? true : false}
-                onChange={handleChange}
-              />
+              <div className={sx["form-name"]}>
+                <input
+                  type="text"
+                  {...register("from_name")}
+                  className={`
+                    ${sx["input-field"]}
+                    ${
+                      errors.from_name?.message
+                        ? sx["error-control"]
+                        : sx["form-control"]
+                    }
+                  `}
+                  placeholder="Name *"
+                  onChange={handleChange}
+                />
+                {errors.from_name?.message && (
+                  <p>{errors.from_name.message as unknown as string}</p>
+                )}
+              </div>
 
               {/* Email */}
-              <TextInput
-                {...register("email_id")}
-                placeholder="Email *"
-                error={
-                  errors.email_id?.message
-                    ? (errors.email_id.message as unknown as any)
-                    : false
-                }
-                onChange={handleChange}
-              />
+              <div className={sx["form-email"]}>
+                <input
+                  type="email"
+                  {...register("email_id")}
+                  className={`
+                    ${sx["input-field"]}
+                    ${
+                      errors.email_id?.message
+                        ? sx["error-control"]
+                        : sx["form-control"]
+                    }
+                  `}
+                  placeholder="Email *"
+                  onChange={handleChange}
+                />
+                {errors.email_id?.message && (
+                  <p>{errors.email_id.message as unknown as string}</p>
+                )}
+              </div>
 
               {/* Message */}
-              <Textarea
-                {...register("message")}
-                placeholder="Message *"
-                error={
-                  errors.message?.message
-                    ? (errors.message.message as unknown as any)
-                    : false
-                }
-                onChange={handleChange}
-              />
+              <div className={sx["form-msg"]}>
+                <textarea
+                  {...register("message")}
+                  className={`
+                    ${sx["input-field"]}
+                    ${
+                      errors.message?.message
+                        ? sx["error-control"]
+                        : sx["form-control"]
+                    }
+                  `}
+                  placeholder="Message *"
+                  onChange={handleChange}
+                />
+                {errors.message?.message && (
+                  <p>{errors.message.message as unknown as string}</p>
+                )}
+              </div>
 
               <button type="submit">Send</button>
             </form>

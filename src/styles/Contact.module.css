@@ -1,0 +1,22 @@
+.input-field {
+  padding: 3px;
+  outline: 0;
+  border-width: 0 0 3px;
+  /* border-color: var(--clr-white); */
+  background-color: transparent;
+}
+
+.form-control {
+  border-color: var(--clr-white);
+  border-radius: 2px;
+}
+
+.error-control {
+  border-color: red;
+}
+
+.form-name {}
+
+.form-email {}
+
+.form-msg {}

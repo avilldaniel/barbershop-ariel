@@ -36,15 +36,16 @@
   /* font-size: var(--fs-lg); */
   display: flex;
   flex-direction: column;
+  padding: .5em 0;
 }
 
 .img-wrapper {
   /* border: 1px solid yellow; */
   filter: brightness(65%);
-  /* padding: .3em; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 .5em;
 }
 
 .home-book {
@@ -61,18 +62,18 @@
 
 .home-serv {
   /* border: 1px dashed olivedrab; */
+  position: absolute;
+  top: 24em;
   text-align: end;
-  background-color: var(--clr-white);
-  filter: brightness(90%);
+  background-color: var(--clr-sand);
   color: var(--clr-black);
   font-family: var(--ff-title);
   font-size: var(--fs-xl);
   font-size: clamp(var(--fs-xl), 13vw, 6rem);
   padding: .25em;
   width: 6.5em;
-  position: relative;
-  top: -1.5em;
-  margin-bottom: -2.3em;
+  /* top: -1.5em; */
+  /* margin-bottom: -2.3em; */
   z-index: 2;
 }
 
@@ -85,7 +86,8 @@
   /* border: 1px solid cyan; */
   background-color: var(--clr-orange-norm);
   font-family: var(--ff-heading);
-  padding: 2em 0 1.5em;
+  /* padding: 2em 0 1.5em; */
+  padding-bottom: 2em;
   width: 100vw;
   gap: .8em;
 }
@@ -98,7 +100,8 @@
   justify-content: space-between;
 
   height: 11em;
-  margin-top: 1em;
+  /* margin-top: 1em; */
+  margin-top: 8em;
 }
 
 .home-bio p {
@@ -120,7 +123,6 @@
   font-size: var(--fs-xl);
 }
 
-/* @media (max-width: 45rem) { */
 @media (max-width: 767px) {
   .home-title {
     font-size: clamp(2rem, 13vw, 6rem);
@@ -137,7 +139,23 @@
   }
 }
 
-/* @media (min-width: 45rem) { */
+@media (min-width: 500px) {
+
+  /* handle services getting too large? */
+  .home-serv {
+    /* position: relative; */
+    /* top: -1.5em;
+    margin-bottom: -4em; */
+  }
+
+  .home-bio-content {
+    /* height: 8em;
+    margin-top: 0;
+    padding: 0em; */
+    margin-top: 14em;
+  }
+}
+
 @media (min-width: 768px) {
   .home-title {
     position: absolute;
