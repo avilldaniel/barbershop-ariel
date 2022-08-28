@@ -1,5 +1,8 @@
 .home-container {
   /* border: 1px solid yellow; */
+  max-width: 155em;
+  margin: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
