@@ -51,7 +51,7 @@ const Home: NextPage = () => {
         <div className={sx["home-serv"]}>
           <header>SERVICES</header>
           <ul>
-            <li>Gentleman{`'`}s Cut - $</li>
+            <li>Gentleman{`'`}s Cut - $25</li>
             <li>Child{`'`}s Cut - $</li>
             <li>Back n{`'`} Sides - $</li>
             <li>Hair n{`'`} Beard - $</li>
