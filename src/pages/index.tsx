@@ -72,7 +72,7 @@ const Home: NextPage = () => {
             height={224}
             style={{ borderRadius: "15px 50px 15px 50px" }}
           />
-          <div>
+          <div className={sx["bio-txt"]}>
             <h1>Ariel Yabut</h1>
             <p>
               <Link href="/about">View Bio</Link>

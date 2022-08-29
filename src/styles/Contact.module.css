@@ -32,8 +32,11 @@
   margin-bottom: 2em;
   outline: 0;
   border-width: 0 0 3px;
-  /* border-color: var(--clr-white); */
   background-color: transparent;
+}
+
+.input-field:focus::placeholder {
+  color: transparent;
 }
 
 .form-control {
@@ -50,11 +53,9 @@
   color: red;
 }
 
-.form-name {}
-
-.form-email {}
-
-.form-msg {}
+.form-msg textarea::placeholder {
+  line-height: 0%;
+}
 
 .form>button {
   position: absolute;

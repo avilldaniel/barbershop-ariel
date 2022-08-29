@@ -18,8 +18,7 @@ const About = () => {
           program hours. When Ariel is not snipping hair and shaping fades, he
           enjoys playing basketball, _, and spending time with his wife, Lea. He
           {`'`}s excited for what lies ahead and is eager to chop it up with old
-          and new faces. [some last sentence] Come for his cuts, but stay for
-          his stories?
+          and new faces. <br /> [some meaningful last sentence...]
         </p>
       </div>
     </div>

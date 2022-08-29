@@ -1,4 +1,5 @@
 import Image from "next/image";
+import sx from "../styles/Gallery.module.css";
 
 const Gallery = () => {
   // Manually add gallery images
@@ -12,10 +13,9 @@ const Gallery = () => {
   ];
 
   return (
-    <div className=".container">
+    <div className={sx.container}>
       <h1>Gallery</h1>
-
-      <div className=".content">
+      <div className={sx.content}>
         {/* On mobile, use 2 columns */}
         {images.map((image, i) => (
           <Image
@@ -24,6 +24,7 @@ const Gallery = () => {
             alt={`Gallery image ${i}`}
             width={170}
             height={170}
+            style={{ borderRadius: "10px" }}
           />
         ))}
       </div>

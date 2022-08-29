@@ -95,15 +95,13 @@ const Contact = () => {
         <h1>Contact Me</h1>
         {/* Contact form */}
         {!msgSent ? (
-          // <div className={sx.form}>
           <div>
             <form onSubmit={handleSubmit(contactSubmit)} className={sx.form}>
               {/* Name */}
-              <div className={sx["form-name"]}>
-                <input
-                  type="text"
-                  {...register("from_name")}
-                  className={`
+              <input
+                type="text"
+                {...register("from_name")}
+                className={`
                     ${sx["input-field"]}
                     ${
                       errors.from_name?.message
@@ -111,15 +109,14 @@ const Contact = () => {
                         : sx["form-control"]
                     }
                   `}
-                  placeholder="Name *"
-                  onChange={handleChange}
-                />
-                {errors.from_name?.message && (
-                  <p className={sx["input-err"]}>
-                    {errors.from_name.message as unknown as string}
-                  </p>
-                )}
-              </div>
+                placeholder="Name *"
+                onChange={handleChange}
+              />
+              {errors.from_name?.message && (
+                <p className={sx["input-err"]}>
+                  {errors.from_name.message as unknown as string}
+                </p>
+              )}
 
               {/* Email */}
               <div className={sx["form-email"]}>

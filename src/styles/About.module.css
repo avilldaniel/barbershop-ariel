@@ -14,7 +14,7 @@
 .text {
   /* make max-width match max width of pic? */
   max-width: 42em;
-  padding: 5% 6%;
+  padding: 7% 6% 3%;
 
   font-family: var(--ff-heading);
   font-size: var(--fs-600);
