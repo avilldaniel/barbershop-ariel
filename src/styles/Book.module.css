@@ -26,7 +26,9 @@
   height: 100%;
 }
 
-.book-now {}
+.book-now p {
+  font-weight: bold;
+}
 
 .book-serv {
   /* border: 1px dashed olivedrab; */

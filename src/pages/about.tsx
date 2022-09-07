@@ -11,6 +11,7 @@ const About = () => {
           height={1009}
           width={758}
           // layout="intrinsic"
+          priority
         />
         <p className={sx.text}>
           Ariel was born and raised... His journey as a barber began 201x..

@@ -18,6 +18,7 @@ const Home: NextPage = () => {
             alt="Home page image 1"
             height={1009}
             width={672}
+            priority
           />
         </div>
         <p className={sx["home-book"]}>
@@ -43,7 +44,7 @@ const Home: NextPage = () => {
         <div className={sx["img-wrapper"]}>
           <Image
             src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home2.jpg"
-            alt="Home page image 1"
+            alt="Home page image 2"
             height={1009}
             width={672}
           />
