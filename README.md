@@ -1,34 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💈 Barbershop Business Landing Page
 
-## Getting Started
+## 📝 Overview
 
-First, run the development server:
+A landing page for a local barber! A big focus for me when building
+this project was design and responsiveness. With a mobile-first
+design pattern, my goal was to make sure the site was smooth on
+mobile devices, whilst also making sure the app did not break when
+scaling to larger viewports. My favorite part of the project was
+creating the navigation bar through vanilla CSS. It also includes a
+contact section, allowing visitors to send a message which will then
+be re-directed to the business owner's email inbox.
+
+🖇 [Landing Page](https://barbershop-ariel.vercel.app/)
+
+![covid-tracker-demo](https://user-images.githubusercontent.com/90011911/180334011-347a6b15-23eb-47ab-b855-0909251f7890.gif)
+
+*actual GIF will go here...*
+
+## ⌨️ Tech
+
+- Next.js + TypeScript
+- S3 + CloudFront distribution - serve static content
+- react-hook-form + Zod - validation
+- EmailJS - contact form
+- Zustand - manage theme
+- Vercel - host site
+- Vanilla CSS
+
+## ✍️ Development Setup
 
 ```bash
+# Clone repo
+git clone https://github.com/avilldaniel/barbershop-ariel.git
+
+# Install dependencies
+npm install
+
+# Initiate server and visit `http://localhost:3000/`
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Meta
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Daniel Villegas - [avilldaniel@gmail.com](avilldaniel@gmail.com)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Distributed under the MIT License. See `MIT License` for more information.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+https://github.com/avilldaniel/barbershop-ariel
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🛠 Contributing
+1. Fork this repo
+2. Create your feature branch `git checkout -b <branch_name>`
+3. Commit your changes `git commit -am "<commit_message>"`
+4. Push to the branch `git push origin <project_name>/<location>`
+5. Create a new Pull Request
