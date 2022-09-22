@@ -6,7 +6,7 @@ const About = () => {
     <div className={sx.container}>
       <div className={sx.content}>
         <Image
-          src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/about.jpg"
+          src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/about.jpeg"
           alt="About page image 1"
           height={1009}
           width={758}

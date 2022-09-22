@@ -28,6 +28,8 @@
   text-shadow:
     4px 4px var(--clr-orange-dark),
     8px 8px var(--clr-black);
+
+  animation: transitionIn 500ms;
 }
 
 .home-content {
@@ -68,7 +70,7 @@
   background-color: var(--clr-sand);
   color: var(--clr-black);
   font-family: var(--ff-title);
-  font-size: var(--fs-xl);
+  /* font-size: var(--fs-xl); */
   font-size: clamp(var(--fs-xl), 13vw, 6rem);
   padding: .25em;
   width: 6.5em;
@@ -96,9 +98,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  height: 7em;
-  margin-top: 7em;
+  height: 40em;
+  margin: 7em auto 0;
   padding: 0 .25em;
+  max-width: 60em;
 }
 
 .bio-txt {
@@ -129,13 +132,15 @@
 .home-bio h1 {
   /* font-family: var(--ff-title); */
   font-family: 'Times New Roman', Times, serif;
-  font-size: var(--fs-xl);
+  /* font-size: var(--fs-xl); */
 }
 
 @media (max-width: 767px) {
   .home-title {
     font-size: clamp(2rem, 13vw, 6rem);
     top: 4em;
+
+    animation: transitionIn 500ms;
   }
 
   .home-content {
@@ -145,6 +150,10 @@
   .home-bio {
     /* font-size: var(--fs-lg); */
     font-size: clamp(var(--fs-lg), 5vh, 3rem);
+  }
+
+  .home-bio-content {
+    height: fit-content;
   }
 }
 
@@ -157,11 +166,16 @@
     margin-bottom: -4em; */
   }
 
+  .home-bio {
+    height: 20em;
+  }
+
   .home-bio-content {
     /* height: 8em;
     margin-top: 0;
     padding: 0em; */
-    margin-top: 14em;
+    margin-top: 8.8em;
+    max-width: 16em;
   }
 }
 
@@ -184,6 +198,27 @@
   .home-content {
     font-size: 3rem;
   }
+
+  .home-bio {
+    height: 70em;
+  }
+
+  .home-bio-content {
+    /* height: 8em;
+    margin-top: 0;
+    padding: 0em; */
+    margin-top: 25em;
+    max-width: 60em;
+  }
+
+  .bio-txt>h1 {
+    font-size: 5rem;
+    padding: 0 .25em;
+  }
+
+  .home-serv {
+    margin-left: 1em;
+  }
 }
 
 .combine-layer {
@@ -196,7 +231,19 @@
 }
 
 .layer-two {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   z-index: 10;
   margin: auto;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

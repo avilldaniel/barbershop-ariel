@@ -18,4 +18,18 @@
 
   font-family: var(--ff-heading);
   font-size: var(--fs-600);
+
+  animation: transitionIn 500ms;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

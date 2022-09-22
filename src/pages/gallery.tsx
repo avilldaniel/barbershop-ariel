@@ -4,12 +4,12 @@ import sx from "../styles/Gallery.module.css";
 const Gallery = () => {
   // Manually add gallery images
   const images = [
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g1.jpg",
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g2.jpg",
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g3.jpg",
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g4.jpg",
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g5.jpg",
-    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g6.jpg",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g1.png",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g2.png",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g3.png",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g4.png",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g5.png",
+    "https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/g6.png",
   ];
 
   return (

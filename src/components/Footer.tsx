@@ -41,7 +41,7 @@ const Footer = () => {
       {/* Copyright */}
       {/* <p className={sx["footer-cr"]}> */}
       <p className={`flex-row-center ${sx["footer-cr"]}`}>
-        <IconCopyright size={18} /> 2022 [Company] — Website by{" "}
+        <IconCopyright size={18} /> 2022 — designed by{" "}
         <a
           href="https://www.linkedin.com/in/daniel-villegas-aira/"
           target="_blank"

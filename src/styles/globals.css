@@ -95,7 +95,7 @@ button {
 
 @media (min-width: 768px) {
   :root {
-    --fs-xl: clamp(3rem, 6vw + 1rem, 7rem);
+    /* --fs-xl: clamp(3rem, 6vw + 1rem, 7rem); */
   }
 }
 

@@ -24,6 +24,8 @@
   flex-direction: column;
 
   height: 100%;
+
+  animation: transitionIn 500ms;
 }
 
 .book-now p {
@@ -46,4 +48,16 @@
 .book-serv li {
   font-size: var(--fs-600);
   font-size: clamp(var(--fs-600), 13vw, 1.2rem);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }

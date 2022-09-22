@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import sx from "../styles/Home.module.css";
-import ariel from "../../public/IMG_2006.jpeg";
 
 const Home: NextPage = () => {
   return (
@@ -24,21 +23,6 @@ const Home: NextPage = () => {
         <p className={sx["home-book"]}>
           <Link href="/book">BOOK NOW</Link>
         </p>
-
-        {/* Image one */}
-        {/* <section className={sx["combine-layer"]}>
-          <div className={sx["layer-one"]}>
-            <Image
-              src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
-              alt="Home page image 1"
-              height={1009}
-              width={672}
-            />
-          </div>
-          <p className={sx["layer-two"]}>
-            <Link href="/book">BOOK NOW</Link>
-          </p>
-        </section> */}
 
         {/* Image two */}
         <div className={sx["img-wrapper"]}>
@@ -63,14 +47,12 @@ const Home: NextPage = () => {
 
       <section className={sx["home-bio"]}>
         <div className={sx["home-bio-content"]}>
-          {/* <Image src={ariel} alt="ariel aha" width={999} height={1332} /> */}
           <Image
-            src={ariel}
-            alt="ariel aha"
-            // width={999}
-            // height={1332}
-            width={168}
-            height={224}
+            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home3.jpeg"
+            alt="View bio image"
+            height={1009}
+            width={759}
+            // layout="responsive"
             style={{ borderRadius: "15px 50px 15px 50px" }}
           />
           <div className={sx["bio-txt"]}>
