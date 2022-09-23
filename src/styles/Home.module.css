@@ -1,15 +1,164 @@
-.home-container {
+.container {
   /* border: 1px solid yellow; */
-  max-width: 155em;
   margin: auto;
+}
+
+.lasvegas {
+  position: relative;
+  height: 80vh;
+
+  display: grid;
+
+  animation: transitionIn 500ms;
+}
+
+.lasvegas img {
+  object-fit: cover;
+}
+
+.img-shadow {
+  filter: brightness(55%);
+}
+
+.layerone, .layertwo {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.layertwo {
+  z-index: 100;
+}
+
+.brand {
+  margin: 5% auto;
+
+  font-family: var(--ff-heading);
+  font-style: italic;
+  color: var(--clr-sand);
+
+  /* Text styling */
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--clr-sand);
+  text-shadow:
+    4px 4px var(--clr-orange-dark),
+    8px 8px var(--clr-black);
+}
+
+.orange {
+  background-color: var(--clr-orange-dark);
+  text-align: center;
+  color: var(--clr-black);
 
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  gap: 2.5%;
+}
 
-  /* Use for content animation load */
-  /* animation: transitionIn 500ms; */
+.orange a {
+  width: 6em;
+  border-radius: 10px;
+  border: 2px solid var(--clr-black);
+}
+
+.bay {
+  position: relative;
+  height: 70vh;
+
+  display: grid;
+}
+
+.bay img {
+  object-fit: cover;
+  filter: brightness(35%);
+}
+
+.bay a {
+  width: 6em;
+  border: 1px solid var(--clr-white);
+  padding: 2.5px 5px;
+  padding: 1rem 2rem;
+}
+
+.bio {
+  text-align: center;
+  font-family: var(--ff-heading);
+}
+
+@media (max-width: 40em) {
+  .brand {
+    margin-top: 25%;
+
+    font-size: 4rem;
+    text-align: center;
+    line-height: .9;
+  }
+
+  .orange {
+    height: 12em;
+  }
+
+  .orange a {
+    font-size: var(--fs-xl);
+  }
+
+  .orange .scissors {
+    height: 70px;
+    width: 70px;
+  }
+
+  .bio {
+    font-size: var(--fs-xl);
+    margin: 3em 0 0 1.5em;
+  }
+}
+
+@media (min-width: 40em) {
+  .brand {
+    font-size: 5rem;
+  }
+
+  .orange {
+    height: 20em;
+  }
+
+  .orange a {
+    font-size: 4rem;
+  }
+
+  .orange .scissors {
+    height: 90px;
+    width: 90px;
+  }
+
+  .bio {
+    font-size: var(--fs-xl);
+    margin: 3em 0 0 1.5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .brand {
+    font-size: 7rem;
+  }
+
+  .bio {
+    font-size: 3.5rem;
+    margin: 4em 0 0 5em;
+  }
+}
+
+@media (min-width: 130em) {
+  .orange {
+    height: 30em;
+  }
+
+  .bio {
+    font-size: 5rem;
+    margin: 4em 0 0 5em;
+  }
 }
 
 @keyframes transitionIn {

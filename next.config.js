@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ["d1i3aib8o7oh3l.cloudfront.net"],
   },
+  experimental: { images: { allowFutureImage: true } },
 };
 
 module.exports = nextConfig;
