@@ -112,3 +112,10 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+.container {
+  /* border: 1px solid salmon; */
+  min-height: 70vh;
+  max-width: 155em;
+  margin: auto;
+}

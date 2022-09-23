@@ -8,11 +8,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 
   padding: 4.3em;
   border-bottom: 1px solid gray;
 
   animation: transitionIn 500ms;
+
+  height: 35em;
 }
 
 .form {

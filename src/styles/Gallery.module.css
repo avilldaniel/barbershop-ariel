@@ -1,6 +1,5 @@
 .container {
   /* border: 1px solid pink; */
-  max-width: 155em;
   margin: auto;
 
   font-family: var(--ff-title);

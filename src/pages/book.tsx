@@ -2,7 +2,7 @@ import sx from "../styles/Book.module.css";
 
 const Book = () => {
   return (
-    <div className={sx.container}>
+    <div className={`${sx.container} container`}>
       <div className={sx.content}>
         <div className={sx["book-now"]}>
           <h1>Book Now</h1>

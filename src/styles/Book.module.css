@@ -1,9 +1,7 @@
 .container {
   /* border: 1px solid blueviolet; */
-  max-width: 155em;
   background-color: var(--clr-sand);
   padding: 1em 6%;
-  height: 30em;
 
   color: var(--clr-black);
   font-family: var(--ff-heading);

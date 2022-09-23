@@ -90,7 +90,7 @@ const Contact = () => {
   };
 
   return (
-    <div className={sx.container}>
+    <div className={`${sx.container} container`}>
       <div className={sx.content}>
         <h1>Contact Me</h1>
         {/* Contact form */}

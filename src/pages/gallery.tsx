@@ -13,7 +13,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className={sx.container}>
+    <div className={`${sx.container} container`}>
       <h1>Gallery</h1>
       <div className={sx.content}>
         {/* On mobile, use 2 columns */}

@@ -3,66 +3,34 @@ import Image from "next/image";
 import Link from "next/link";
 import sx from "../styles/Home.module.css";
 
+<>
+  <Image
+    src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
+    alt="Home page image 1"
+    height={1009}
+    width={672}
+    priority
+  />
+  <Image
+    src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home2.jpg"
+    alt="Home page image 2"
+    height={1009}
+    width={672}
+  />
+  <Image
+    src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home3.jpeg"
+    alt="View bio image"
+    height={1009}
+    width={759}
+    // layout="responsive"
+    style={{ borderRadius: "15px 50px 15px 50px" }}
+  />
+</>;
+
 const Home: NextPage = () => {
   return (
-    <div className={sx["home-container"]}>
-      {/* <header className={sx["home-title"]}>COMPANY {`<name>`}</header> */}
-
-      <div className={sx["home-content"]}>
-        <header className={sx["home-title"]}>COMPANY {`<name>`}</header>
-        {/* Image one */}
-        <div className={sx["img-wrapper"]}>
-          <Image
-            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home.jpg"
-            alt="Home page image 1"
-            height={1009}
-            width={672}
-            priority
-          />
-        </div>
-        <p className={sx["home-book"]}>
-          <Link href="/book">BOOK NOW</Link>
-        </p>
-
-        {/* Image two */}
-        <div className={sx["img-wrapper"]}>
-          <Image
-            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home2.jpg"
-            alt="Home page image 2"
-            height={1009}
-            width={672}
-          />
-        </div>
-        <div className={sx["home-serv"]}>
-          <header>SERVICES</header>
-          <ul>
-            <li>Gentleman{`'`}s Cut - $25</li>
-            <li>Child{`'`}s Cut - $</li>
-            <li>Back n{`'`} Sides - $</li>
-            <li>Hair n{`'`} Beard - $</li>
-            <li>Hair dye - $</li>
-          </ul>
-        </div>
-      </div>
-
-      <section className={sx["home-bio"]}>
-        <div className={sx["home-bio-content"]}>
-          <Image
-            src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/home3.jpeg"
-            alt="View bio image"
-            height={1009}
-            width={759}
-            // layout="responsive"
-            style={{ borderRadius: "15px 50px 15px 50px" }}
-          />
-          <div className={sx["bio-txt"]}>
-            <h1>Ariel Yabut</h1>
-            <p>
-              <Link href="/about">View Bio</Link>
-            </p>
-          </div>
-        </div>
-      </section>
+    <div className={"container"}>
+      <>idk</>
     </div>
   );
 };

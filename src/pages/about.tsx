@@ -3,7 +3,7 @@ import sx from "../styles/About.module.css";
 
 const About = () => {
   return (
-    <div className={sx.container}>
+    <div className={`${sx.container} container`}>
       <div className={sx.content}>
         <Image
           src="https://d1i3aib8o7oh3l.cloudfront.net/temp-placeholder/about.jpeg"
