@@ -12,8 +12,9 @@ const Footer = () => {
           <h1>
             CONTACT <br />
           </h1>
-          Ph: (702)XXX-XXXX <br />
-          Email: email@gmail.com
+          {/* Ph: (702)XXX-XXXX <br /> */}
+          Ph: (702) 500-3865 <br />
+          Email: onguardcuts@proton.mail
         </div>
 
         {/* Hours */}
@@ -21,8 +22,8 @@ const Footer = () => {
           <h1>
             HOURS <br />
           </h1>
-          Mon-Thurs: xAM - yPM <br />
-          Fri-Sat: xAM - yPM <br />
+          Mon-Thurs: 12PM - 4PM <br />
+          Fri-Sat: 10AM - 4PM <br />
           Sun: Closed
         </div>
 

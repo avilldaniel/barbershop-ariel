@@ -1,5 +1,4 @@
 .container {
-  max-width: 155em;
   margin: auto;
 }
 
@@ -15,7 +14,7 @@
 
   animation: transitionIn 500ms;
 
-  height: 35em;
+  min-height: 70vh;
 }
 
 .form {

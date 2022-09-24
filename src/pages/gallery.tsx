@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/future/image";
 import sx from "../styles/Gallery.module.css";
 
 const Gallery = () => {
@@ -24,7 +24,13 @@ const Gallery = () => {
             alt={`Gallery image ${i}`}
             width={170}
             height={170}
-            style={{ borderRadius: "10px" }}
+            // width={250}
+            // height={250}
+            // sizes="100vh"
+            // sizes="(max-width: 768px) 100vw,
+            //   (max-width: 1200px) 50vw,
+            //   33vw"
+            // fill
           />
         ))}
       </div>

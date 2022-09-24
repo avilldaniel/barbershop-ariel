@@ -6,9 +6,13 @@
   color: var(--clr-black);
   font-family: var(--ff-heading);
   font-size: var(--fs-600);
+
+  display: flex;
+  align-items: center;
 }
 
 .container h1 {
+  /* border: 1px solid blueviolet; */
   font-family: var(--ff-title);
   font-size: var(--fs-xl);
   font-size: clamp(var(--fs-xl), 13vw, 6rem);
@@ -18,10 +22,14 @@
 .content {
   /* border: 1px solid blueviolet; */
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3em;
 
+  margin: auto;
   height: 100%;
+  width: 100%;
+  max-width: 90em;
 
   animation: transitionIn 500ms;
 }
@@ -46,6 +54,22 @@
 .book-serv li {
   font-size: var(--fs-600);
   font-size: clamp(var(--fs-600), 13vw, 1.2rem);
+}
+
+@media (min-width: 60em) {
+  .book-now p, .book-serv li {
+    font-size: x-large;
+  }
+
+  .content {
+    gap: 4em;
+  }
+}
+
+@media (min-width: 90em) {
+  .content {
+    gap: 7em;
+  }
 }
 
 @keyframes transitionIn {
