@@ -13,7 +13,10 @@ be re-directed to the business owner's email inbox.
 
 🖇 [Landing Page](https://barbershop-ariel.vercel.app/)
 
-![landing-page-demo](https://d1i3aib8o7oh3l.cloudfront.net/portfolio/onguard.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/90011911/192118900-fa6c65e3-bcb2-4f31-84aa-2354abcd9044.gif" alt="landing-page-demo" />
+</p>
+
 
 ## ⌨️ Tech
 
