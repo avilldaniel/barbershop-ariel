@@ -34,7 +34,7 @@ const Meta = ({ keywords, description, title }: IMeta) => {
 Meta.defaultProps = {
   keywords: "haircut, barber, fade, hair, hairstyle, clipper, shave",
   description: "Let Ariel serve your next haircut!",
-  title: "Blurry",
+  title: "OnGuard",
 };
 
 export default Meta;
