@@ -13,9 +13,10 @@ be re-directed to the business owner's email inbox.
 
 🖇 [Landing Page](https://barbershop-ariel.vercel.app/)
 
-![covid-tracker-demo](https://user-images.githubusercontent.com/90011911/180334011-347a6b15-23eb-47ab-b855-0909251f7890.gif)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/90011911/192118900-fa6c65e3-bcb2-4f31-84aa-2354abcd9044.gif" alt="landing-page-demo" />
+</p>
 
-*actual GIF will go here...*
 
 ## ⌨️ Tech
 
